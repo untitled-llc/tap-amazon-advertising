@@ -38,7 +38,7 @@ RUN apk add --no-cache --virtual .build-deps \
     && python3 -m venv /usr/local/amazon/venvs/tap_amazon_advertising \
 		&& source /usr/local/amazon/venvs/tap_amazon_advertising/bin/activate \
 		&& pip install python-dateutil==2.8.0 \
-		&& git clone git@github.com:untitled-llc/tap-amazon-advertising.git\
+		&& git clone git@github.com:fishtown-analytics/tap-amazon-advertising.git\
         && cd tap_amazon_advertising \
         && pip install . \
         && cd /usr/local/amazon \

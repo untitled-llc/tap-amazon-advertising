@@ -14,7 +14,7 @@ target = 'target-json'
 local_path = '/usr/local/amazon/pipeline'
 
 # s3 paths
-bucket = 'tap-amazon-ads'
+bucket = 'tap-amazon-advertising'
 
 ########################## Functions #####################################################3
 # create the local pipeline directory
