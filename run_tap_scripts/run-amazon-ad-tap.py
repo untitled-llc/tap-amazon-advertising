@@ -9,7 +9,7 @@ from script.local_module import create_local_pipeline_dir, get_load_type, downlo
 import os
 ######################### Set Local Variables ################################################
 #Gets the AWS Batch stored env variable (there are 10 diifferent endpoint pipelines for eltoro)
-tap = 'tap-amazon-ads'
+tap = 'tap_amazon_advertising'
 target = 'target-json'
 local_path = '/usr/local/amazon/pipeline'
 

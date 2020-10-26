@@ -35,11 +35,11 @@ RUN apk add --no-cache --virtual .build-deps \
         && pip3 install --upgrade setuptools boto3 \
         && mkdir /usr/local/amazon \
         && cd /usr/local/amazon \
-    && python3 -m venv /usr/local/amazon/venvs/tap-amazon-ads \
-		&& source /usr/local/amazon/venvs/tap-amazon-ads/bin/activate \
+    && python3 -m venv /usr/local/amazon/venvs/tap_amazon_advertising \
+		&& source /usr/local/amazon/venvs/tap_amazon_advertising/bin/activate \
 		&& pip install python-dateutil==2.8.0 \
-		&& git clone git@github.com:Esquire-Media/tap-eltoro.git \
-        && cd tap-amazon-ads \
+		&& git clone git@github.com:untitled-llc/tap-amazon-advertising.git\
+        && cd tap_amazon_advertising \
         && pip install . \
         && cd /usr/local/amazon \
     && python3 -m venv /usr/local/amazon/venvs/target-json \
