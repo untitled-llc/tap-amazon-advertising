@@ -3,6 +3,8 @@
 import requests
 import requests_oauthlib
 
+
+#This is the DCH version of the fishtown-analytics get_refresh_token.py file containing variables associated to their specific case
 # Fill these in with your credentials
 #these can be found on amazon account
 client_id     = client_id
